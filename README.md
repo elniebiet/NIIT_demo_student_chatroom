@@ -5,4 +5,4 @@ A simple chatroom utilising AJAX for typing Notification for demonstration.
 
 ## Screenshot
 
-![](screenshots/NIIT.Png)
+![](screenshots/NIIT.png)
