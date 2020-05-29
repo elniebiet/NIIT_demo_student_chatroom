@@ -1,0 +1,316 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	font-family: 'Poppins', sans-serif;
+	background-color: #0012ffbf;
+}
+.logo {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 40px;
+}
+.nav-links {
+	display: flex; 
+	justify-content: space-around;
+	width: 30%;
+}
+.nav-links li {
+	list-style: none;
+}
+.nav-links a {
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 14px;
+}
+.nav-links a:hover {
+	color: #00ffbf;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 14px;
+}
+.mob-icon div{
+	width: 25px;
+	height: 5px;
+	background-color: #fff;
+	margin: 3px; 
+}
+.mob-icon {
+	display: none;
+	cursor: pointer;
+}
+
+/* maindiv */
+.maindiv {
+	width: 100vw;
+	background-size: 100vw 100vh;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-image: url("../img/index.jpg");
+	position: fixed;
+}
+.login {
+	width: 35%;
+	height: auto;
+	float: right;
+	margin-right: 10%;
+	margin-top: 5%;
+	justify-content: center;
+	align-items: center;
+	background-color: #93bede;
+	color: #fff;
+	border: 1px solid #0012ffbf;
+
+}
+.signup {
+	width: 35%;
+	height: auto;
+	float: right;
+	margin-right: 10%;
+	margin-top: 5%;
+	justify-content: center;
+	align-items: center;
+	background-color: #93bede;
+	color: #fff;
+	border: 1px solid #0012ffbf;
+	display: none;
+}
+.username, .firstname, .lastname {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	padding-bottom: 0;
+}
+.username input, .password input, .firstname input, .lastname input {
+	height: 30px;
+	border-radius: 5px;
+}
+.password {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+.buttons {
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+.btnLogin, .btnJoin, .btnSignUp, .btnCancel {
+	height: 30px;
+	width: 50px;
+	border-radius: 5px;
+	background-color: aliceblue;
+}
+.loginHeader, .signUpHeader {
+	width: 100%;
+	height: 30px;
+	background-color: blue;
+	align-items: center;
+}
+.loginHeader header, .signUpHeader header {
+	padding-left: 10%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+.forum {
+	background-color: #fff;
+	width: 80%;
+	height: 85vh;
+
+ 	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 2%;
+	border: 1px solid blue;
+	border-radius: 2%;
+	display: flex;
+	flex-direction: column; 
+ 	align-items: center; 
+	 padding: 5px;
+	 display: none;
+}
+
+.forumHeading header {
+	width: 100%;
+	height: 5%;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	color: blue;
+	margin-top: 20px;
+	margin-bottom: 20px
+	position: fixed;
+}
+
+.postsDiv {
+	width: 100%;
+	height: 75%;
+/* 	border: 1px solid red; */
+	padding: 3px;
+	overflow-x: scroll;
+}
+.sendMessage {
+	width: 100%;
+	height: 15%;
+/* 	border: 1px solid blue; */
+	border-radius: 5px;
+}
+.typingDiv {
+	width: 80%;
+	height: 20%;
+	margin-left: 5px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-right: 5px;
+	font-size: 12px;
+	font-style: italic;
+/* 	border: 1px solid red; */
+}
+.rawMessageDiv {
+	width: 80%;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 50%;
+	font-size: 12px;
+}
+.rawMessageDiv textarea {
+	width: 80%;
+	height: 100%;	
+	padding: 5px;
+	border: 1px solid blue;
+
+}
+.btnSendDiv {
+	width: 50%;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.btnSendDiv button {
+	width: 100px;
+	color: blue;
+	border: 1px solid blue;
+	
+	height: 20px;
+
+}
+.postDiv {
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+}
+.personDiv {
+	width: 20%;
+	height: 8vh;
+	background-color: #fff;
+/* 	background-color: #001eff1f;	 */
+	text-align: center;
+	font-size: 14px;
+	padding: 10px;
+	border-right: 5px solid #fff;
+}
+.messageDiv {
+	width: 50%;
+	height: auto;
+	background-color: #0035ff6b;
+	text-align: left;
+	padding: 5px;
+	color: #fff;
+	font-family: cursive;
+	font-size: 12px;
+	border-radius: 5%;
+}
+.timeDiv {
+	width: 20%;
+	height: 8vh;
+	background-color: aliceblue;
+	text-align: center;
+	font-size: 12px;
+	font-style: italic;
+	padding: 3px;
+	border-left: 5px solid #fff; 
+	border-radius: 20%;
+}
+#loginstatus, #signupstatus {
+	color: #FFEB3B;
+	font-size: 16px;
+	margin-left: 5px;
+	font-weight: bold;
+}
+.postedby {
+	font-size: 10px;
+	color: red;
+}
+
+@media screen and (max-width: 1024px){
+	.nav-links {
+		display: flex; 
+		justify-content: space-around;
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	body {
+		overflow-x:hidden;
+	}
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		background-color: #0012ffbf;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 40%;
+		margin-top: 40vh;
+	}
+	.mobile-nav {
+		justify-content: center;
+		padding: 10px;
+		border-top: 10px solid #fff;
+		width: 50%;
+	}
+	.mobile-nav a {
+		text-decoration: none;
+		color: #fff;
+	}
+	.mob-icon {
+		display: block;
+	}
+	.forum {
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 20px;
+		height: 80vh;
+	}
+	.personDiv {
+		font-size: 11px;
+	}
+	.timeDiv {
+		font-size: 11px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
